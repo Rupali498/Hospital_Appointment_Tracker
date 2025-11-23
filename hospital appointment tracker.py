@@ -2,7 +2,7 @@ appointments = []
 def add_appointment():
      print("\n provide appointment deatails:")
      patient=input("Patients name:")
-     doctor=("Doctor's name:")
+     doctor=input("Doctor's name:")
      date=input("Date (YYYY-MM-DD):")
      time=input("Time (HH:MM):")
      Reason=input("reason for visits")
@@ -15,7 +15,7 @@ def add_appointment():
           "doctor":doctor,
           "date":date,
           "time":time,
-          "reason":Reason}
+          "reason":reason}
      appointments.append(appt)
      print("appointment booked successfully.")
 def list_appointments():
@@ -62,7 +62,7 @@ def main():
        print("4. Cancel appointment")
        print("5.Exit")
        choice=input("Choose an option:")
-       if choice=="1.":
+       if choice=="1":
             add_appointment()
        elif choice=="2":
              list_appointments()
@@ -75,6 +75,7 @@ def main():
               break
        else:
               print("Invalid choice.")
-if __name__=="__main__:":
+if __name__=="__main__":
    main()                                           
+
                 
