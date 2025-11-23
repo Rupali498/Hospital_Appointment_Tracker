@@ -5,7 +5,7 @@ def add_appointment():
      doctor=input("Doctor's name:")
      date=input("Date (YYYY-MM-DD):")
      time=input("Time (HH:MM):")
-     reason=input("reason for visits")
+     Reason=input("reason for visits")
      for a in appointments:
           if a["doctor"].lower()==doctor.lower() and a["date"]==date and a["time"]==time:
                print("the doctor already has an appointment at that time.")
@@ -15,7 +15,7 @@ def add_appointment():
           "doctor":doctor,
           "date":date,
           "time":time,
-          "reason":reason}
+          "reason":Reason}
      appointments.append(appt)
      print("appointment booked successfully.")
 def list_appointments():
@@ -79,4 +79,5 @@ if __name__=="__main__":
    main()                                           
 
                 
+
 
